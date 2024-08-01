@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/popup.css">
+</head>
+<body>
+    <div class= "container">
+        <button type="submit" class="btn" onclick="openpopup()">submit</button>
+        <div class="popup" id="popup">
+            <img src="assets/images/404-tick.png">
+            <h3>thank you!</h3>
+            <p>Thank you for your generous donation! Your support helps us make a real difference in the lives of those we serve. Together, we are creating a brighter future and a stronger community. We appreciate your kindness and commitment to our cause.</p>
+            <button type="button" onclick="closepopup()"><a href="index.html">OK</a></button>
+        </div>
+    </div>
+    <script>
+        let popup=document.getElementById("popup");
+        function openpopup(){
+            popup.classList.add("open-popup");
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
